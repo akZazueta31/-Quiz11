@@ -1,0 +1,16 @@
+#Ana Karen Zazueta Pimentel
+#A01630485
+
+def check_banana(n):
+    x=open(n,"r")
+    y=0
+    for i in x:
+        z=i.lower()
+        sub=z.find("banana")
+        while sub !=(-1):
+            y=y+1
+            sub=z.find("banana",(sub+1))
+    return(z)
+
+ans= check_banana ("bananin.txt")
+print("Number of bananas: ",ans)
