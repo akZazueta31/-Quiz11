@@ -1,0 +1,21 @@
+#Ana Karen Zazueta Pimentel
+#A01630485
+
+import statistics
+
+def readNumbersFromFile(n):
+    x=open(n,"r")
+    y=0
+    z=0
+    lista=[]
+    for i in x:
+        y=y+int(i)
+        z=z+1
+        list.append(int(i))
+    st=statistics.stdev(list)
+    print("The total of the value: ",y)
+    print("The number of the value: ,",z)
+    print("The arithmetic mean of the values: ",(y/z))
+    print("The standard deviation of the values: ",st)
+
+readNumbersFromFile("numbers.txt")
